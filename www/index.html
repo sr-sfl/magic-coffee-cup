@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <title>Magic Coffee Cup</title>
+        <link rel="stylesheet" href="css/css.css">
+        <link rel="stylesheet" href="css/kendo.mobile.all.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+        <div data-role="view" data-layout="default" data-title="Home">
+            <div id="main">
+                <h1>Busy day?</h1>
+                <p>Lets just stop for a moment to ask ourselves the one simple question that comes up every time we need to wake up. Is it time for some coffee? Press start and lets find out what our magic coffecup has to say;)</p>
+                <a data-role="button" class="km-large" data-position="fixed" style="background-color: paleturquoise" href="favorites" data-transition="slide:left">START</a>
+            </div>
+        </div>
+            
+        
+        <div data-role="view" data-layout="default" id="favorites" data-title="Favs" data-stretch="true"> 
+            <div class="coffee" id="coffee" >
+              <img src="../www/imgs/original.gif" width="100%" onclick='coffee.displayMessage()'/>
+              <div id="coffeeMessage" class="coffeeMessage"></div>
+            </div>
+        </div>
+            
+<!--
+            <footer data-role="footer">
+                <div class="footer">
+                    <h6>By Sara Sefel &copy;2018</h6>
+                </div>
+            </footer>
+-->
+        
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/kendo.ui.core.min.js"></script>
+        <script>
+            var app = new kendo.mobile.Application();
+        </script>
+        
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="cordova.js"></script>
+           
+    </body>
+</html>
